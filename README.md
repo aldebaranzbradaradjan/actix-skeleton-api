@@ -12,6 +12,10 @@ To compile we need an valid Rust environnement : https://rustup.rs/. We also the
 
 We also need an postgresql database, and a .env containing informations such as the name of your platform, various paths, and info about the API.
 
+The artisan target is disabled by default, because the two targets hurt my editor (rust-analyser). He complain, saying that a particular function is not used (artisan don't use them, but the api do), and I get plenty of ugly warnings. Maybe we should dig but I haven't wanted to yet.
+
+When I want to use artisan I uncomment the "artisan" target in the .toml.
+
 # Build
 ## Build API
 ```bash
